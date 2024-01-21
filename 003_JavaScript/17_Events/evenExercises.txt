@@ -1,0 +1,7 @@
+<button onclick="alert('Hello')">Click me.</button>
+
+
+<button onclick="myFunction()">Click me.</button>
+
+
+<div onmouseover="this.style.backgroundColor='red'">myDIV.</div>

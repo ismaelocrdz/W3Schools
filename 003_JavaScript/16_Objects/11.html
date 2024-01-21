@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The this Keyword</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Objects 11
+            </h1>                                    
+            <p>
+                An object method is a function definition, stored as a property value. 
+            </p>            
+            <p id="demo01" class="demo_01">               
+            </p>
+            <p>
+                <a href="12.html">Example 02</a>
+            </p>
+            <script>
+                //Create an object
+                const person = {
+                    firstName: "Isma",
+                    lastName: "Ochoa",
+                    id: 6969,
+                    fullName: function(){
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+                //Display data from the object:
+                document.getElementById("demo01").innerHTML = person.fullName();
+            </script>         
+        </div>
+        <div class="menu">
+            <button>
+                <a href="10.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="12.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

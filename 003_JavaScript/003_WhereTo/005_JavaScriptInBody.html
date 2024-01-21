@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Where To 05
+            </h1>
+            <h2>
+                Demo JavaScript in &lt;body&gt;
+            </h2>
+            <p>
+                In this example, a JavaScript <span class="nota">&nbsp;&nbsp;function&nbsp;&nbsp;</span> is placed in the <span class="nota">&nbsp;&nbsp;&lt;body&gt;&nbsp;&nbsp;</span> section of an HTML page.
+            </p>
+            <p>
+                The function is invoked (called) when a button is clicked:
+            </p>
+            <p id="demo">
+                A paragraph
+            </p>
+            <button type="button" onclick="myFunction()">
+                Try it!
+            </button>
+            <div class="DYK">
+                Placing scripts at the bottom of the <span class="nota">&nbsp;&nbsp;&lt;body&gt;&nbsp;&nbsp;</span> element improves the display speed, because script interpretation slows down the display.
+            </div>
+            <p>
+                En la página siguiente, encontrarás el código que lo hace posible.
+            </p>
+            <script>
+                function myFunction(){
+                    document.getElementById("demo").innerHTML="Paragraph Changed";
+                }
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="004_JavaScriptInHead_Example.html">Before</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="001_TheScriptTag.html">Inicio</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="006_JavaScriptInBody_Example.html">Next</a>
+            </button>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="#" target="_blank">010-020</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="#">021-030</a>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="#">031-040</a>
+            </button>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Objects 09
+            </h1>
+            <h2>
+                Object Methods
+            </h2>                        
+            <p>
+                But, what is <b>this</b>?
+            </p>            
+            <p>
+                In JavaScript, the <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> keyword refers to an <b>object</b>.
+            </p>
+            <p>
+                <b>Wich</b> object depends on how <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> is being invoked.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> keyword refers to different objects depending on how it is used:
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        In an object, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> refers to the <b>object</b>. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alone, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> refers to the <b>global project</b>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        In a function, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> refers to the <b>global project</b>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        In a function, in strict mode, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> is <span class="nota">&nbsp;&nbsp;undefined&nbsp;&nbsp;</span> .
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        In an event, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> refers to the <b>element</b> that received the event.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Methods like <span class="nota">&nbsp;&nbsp;call()&nbsp;&nbsp;</span> , <span class="nota">&nbsp;&nbsp;applay()&nbsp;&nbsp;</span> , and <span class="nota">&nbsp;&nbsp;bind&nbsp;&nbsp;</span> can refer <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> to <b>any object</b>.
+                    </td>                
+                </tr>
+            </table>
+            <div class="notice DYK">
+                <h2>
+                    Note
+                </h2>
+                <p>
+                    <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> is not a variable. It is a keyword. You cannot change the value of <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> .
+                </p>
+            </div>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="08.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="10.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

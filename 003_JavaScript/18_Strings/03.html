@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Inside Quotes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings 03
+            </h1>
+            <h2>
+                Quotes Inside Quotes
+            </h2>
+            <p>
+                You can use quotes inside a string, as long as they don't match the quotes surrounding the string.
+            </p>
+            <h3>
+                Example:
+            </h3>            
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <p id="demo03" class="demos demo_03">                
+            </p>            
+            <script>
+                let answer01 = "It's alright";
+                let answer02 = "She's called 'Yaz'";
+                let answer03 = 'He\'s called "Isma"';
+                document.getElementById("demo01").innerHTML = answer01;
+                document.getElementById("demo02").innerHTML = answer02;
+                document.getElementById("demo03").innerHTML = answer03;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="02.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="04.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

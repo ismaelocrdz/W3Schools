@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Objects 08
+            </h1>
+            <h2>
+                Object Methods
+            </h2>
+            <div class="notice DYK">
+                <p>
+                    A method is a function stored as a property.
+                </p>
+            </div>            
+            <p>
+                Example:                
+            </p>
+            <div class="code">
+                <pre>
+                    const person = {
+                        firstName: "Isma",
+                        lastName : "Ochoa",
+                        id       : "6969",
+                        fullName : function(){
+                            return this.firstName + " " + this.lastName;
+                        }
+                    };
+                </pre>
+            </div>
+            <p>
+                In the example above, <span class="nota">&nbsp;&nbsp;this&nbsp;&nbsp;</span> refers to the <b>person object</b>.
+            </p>
+            <p>
+                <b>this.firstName</b> means the <b>firstName</b> property of <b>person</b>.
+            </p>
+            <p>
+                <b>this.lastName</b> means the <b>lastName</b> property of <b>person</b>.
+            </p>            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="07.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="09.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

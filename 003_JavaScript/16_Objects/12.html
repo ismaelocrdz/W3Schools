@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The this Keyword</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Objects 12
+            </h1>                                    
+            <p>
+                If you acces a method <b>without</b> the parenteses, it will return the <b>definition</b>:
+            </p>            
+            <p id="demo" class="demo_01">               
+            </p>            
+            <script>
+                //Create an object
+                const person = {
+                    firstName: "Isma",
+                    lastName: "Ochoa",
+                    id: 6969,
+                    fullName: function(){
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+                //Display data from the object:
+                document.getElementById("demo").innerHTML = person.fullName;
+            </script>         
+        </div>
+        <div class="menu">
+            <button>
+                <a href="11.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="13.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

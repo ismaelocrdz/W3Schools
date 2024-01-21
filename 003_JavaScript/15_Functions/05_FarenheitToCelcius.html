@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>
+        JavaScript Functions
+    </h1>
+    <p>
+        Accessing a function without () returns the function and not the function result:
+    </p>    
+    <p id="demo" style="color:crimson; font-weight: 700;">
+    </p>
+    <script>
+        function toCelcius(f){
+            return(5/9)*(f-32);
+        }
+        let value = toCelcius;
+        document.getElementById("demo").innerHTML = "77 degrees Fahrenheit is equal to "+value;
+    </script>
+</body>
+</html> 

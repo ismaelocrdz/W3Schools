@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings 04
+            </h1>
+            <h2>
+                Template Strings
+            </h2>
+            <p>
+                Templates were introduced with WS6 (JavaScript 2016).
+            </p>
+            <p>
+                Templates are strings enclosed in backticks (`Thid id s template string`).
+            </p>
+            <p>
+                Templates allow single and double quotes inside a string:
+            </p>
+            <h3>
+                Example:
+            </h3>            
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <div class="notice DYK">
+                <p>
+                    Templates are not supported in Internet Explorer
+                </p>
+            </div>                               
+            <script>
+                let text = `He's often called "Johnny"`;
+                document.getElementById("demo01").innerHTML = text;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="03.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="05.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

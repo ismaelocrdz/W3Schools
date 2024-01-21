@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Object Properties</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Objects 06
+            </h1>
+            <h2>
+                Accessing Object Properties
+            </h2>            
+            <p>
+                You can access object properties in two ways:               
+            </p>
+            <p>
+                <i>
+                    objectName.propertyName
+                </i>
+            </p>
+            <p>
+                or
+            </p>
+            <p>
+                <i>
+                    objectName["propertyName"]
+                </i>
+            </p>            
+            <hr>
+            <p>
+                Example 01
+            </p>
+            <p>
+                There are two different ways to acces an object property
+            </p>
+            <p>
+                You can use person.property
+            </p>            
+            <p id="demo01">                
+            </p>
+            <p>
+                The JavaScript code is:
+            </p>
+            <div class="code">
+                <pre>
+                    document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+                </pre>
+            </div>
+            <p>
+                Or person["property"].
+            </p>
+            <p id="demo02">                
+            </p>
+            <p>
+                The JavaScript code is:
+            </p>
+            <div class="code">
+                <pre>
+                 document.getElementById("demo").innerHTML = person["firstName"] + " " + person["lastName"];
+                </pre>
+            </div>
+            <hr>
+            <div class="notice DYK">
+                <p>                    
+                    JavaScript objects are containers for named values called properties.
+                </p>
+            </div>
+            <script>
+                //Create an object
+                const person = {
+                    firstName:"Isma",
+                    lastName:"Ochoa",
+                    id:"6969"
+                };
+                //Display some data from the object
+                document.getElementById("demo01").innerHTML = person.firstName + " " + person.lastName;
+                document.getElementById("demo02").innerHTML = person["firstName"] + " " + person["lastName"];
+            </script>                       
+        </div>
+        <div class="menu">
+            <button>
+                <a href="05.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="07.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
