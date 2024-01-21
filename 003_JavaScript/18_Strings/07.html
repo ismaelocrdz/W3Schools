@@ -3,11 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>String Length</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <p>
-        archivo
-    </p>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings 06
+            </h1>
+            <h2>
+                Escape Characters
+            </h2>
+            <p>
+                Because strings must be written quotes, JavaScript will misundertand this string. 
+            </p>
+            <div class="code">
+                <pre>
+                    <span class="colors blue">let text</span> = <span class="colors darkRed">"We are the so-called</span> "Vikings" <span class="colors darkRed">from the north.</span>";
+                </pre>
+            </div>
+            <p>
+                The string will be chopped to "We are the so-called".
+            </p>
+            <p>
+                To solve this problem, you can use an <b>backslash escape character</b>.
+            </p>
+            <p>
+                The backslash escape character ( <span class="colors blue">\</span> ) turn special characters into strin characters:
+            </p>
+            <table>
+                <tr>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        \'
+                    </td>
+                    <td>
+                        '
+                    </td>
+                    <td>
+                        Single quote
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \"
+                    </td>
+                    <td>
+                        "
+                    </td>
+                    <td>
+                        Double quote 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \\
+                    </td>
+                    <td>
+                        \
+                    </td>
+                    <td>
+                        Backslash 
+                    </td>
+                </tr>
+            </table>
+            <h3>
+                Examples:
+            </h3>
+            <p>
+                \" inserts a double quote in a string
+            </p>
+            <p>
+                The escape sequence \" inserts a double quote in a string.
+            </p>
+            <div class="code">
+                <pre>
+                    <span class="colors blue">let text</span> = <span class="colors darkRed">"We are the so-called</span> "Vikings" <span class="colors darkRed">from the north.</span>";
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p>
+                
+            </p>
+            <a href="07.html">View Example 02</a>                                           
+            <script>
+                let text = "We are the so-called \"Vikings\" from the north.";
+                document.getElementById("demo01").innerHTML = text;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="05.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="06.html">Next</a>
+            </button>
+        </div>
+    </div>    
 </body>
 </html>
