@@ -10,27 +10,32 @@
     <div class="container">
         <div class="content">
             <h1>
-                JavaScript Strings 07
+                JavaScript Strings 08
             </h1>
             <h2>
                 Escape Characters
             </h2>
             <h3>
-                Example 02
+                Example 03
             </h3>
             <p>
-                The scape sequence \' inserts a single quote in a string.
+                \\ inserts a backslash in a string:
+            </p>
+            <p>
+                The escape sequence \\ inserts a backslash in a string.
             </p>
             <div class="code">
                 <pre>
-        <span class="colors blue">let text</span> = <span class="colors darkRed">'It\'s alright.';</span>
+        <span class="colors blue">let text</span> = <span class="colors darkRed">"The character \\ is called backslash";</span>
                 </pre>
             </div>            
             <p id="demo01" class="demos demo_01">                
-            </p>            
-            <a href="08.html">View Example 03</a>                                           
+            </p>  
+            <p>
+                <a href="08.html">View Example 03</a>
+            </p>
             <script>
-                let text = 'It\'s alraight.';
+                let text = "The character \\ is called backslash";
                 document.getElementById("demo01").innerHTML = text;
             </script>
         </div>
