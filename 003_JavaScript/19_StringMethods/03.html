@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 03
+            </h1>
+            <h2>
+                String CharCodeAt()
+            </h2>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;charCodeAt&nbsp;&nbsp;</span> method returns the code of the character at a specified index in a string:  
+            </p>
+            <p>
+                The method returns a UTF-16 code (an integer between 0 and 65535)
+            </p>
+            <p>
+                Example:
+            </p>
+            <div class="code">
+                <pre>
+                            let text = "HELLO, WORLD!";
+                            let char = text .charCodeAt(0);
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <h2>
+                JavaScript String At()
+            </h2>
+            <p>
+                ES2022 introduced the string method <span class="nota">&nbsp;&nbsp;at()&nbsp;&nbsp;</span>:
+            </p>
+            <div class="code">
+                <pre>
+                            const name = "Yazmín";
+                            let letter = name.at(2);
+                </pre>
+            </div>
+            <h3>
+                Example:
+            </h3>
+            <p>
+                Get the third letter of name:
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <script>
+                let text = "HELLO, WORLD!";
+                document.getElementById("demo01").innerHTML = text.charAt(0);
+                const name = "Yazmín";
+                let letter = name.at(2);
+                document.getElementById("demo02").innerHTML = letter;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="02.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="04.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 02
+            </h1>
+            <h2>
+                Extracting String Characters
+            </h2>
+            <p>
+                There are 4 methods for extracting characters:   
+            </p>
+            <div class="list">
+                <ul>
+                    <li>
+                        The <span class="nota">&nbsp;&nbsp;at (position)&nbsp;&nbsp;</span> method
+                    </li>
+                    <li>
+                        The <span class="nota">&nbsp;&nbsp;charAt (position)&nbsp;&nbsp;</span> method
+                    </li>
+                    <li>
+                        The <span class="nota">&nbsp;&nbsp;charCodeAt (position)&nbsp;&nbsp;</span> method
+                    </li>
+                    <li>
+                        Using property access [] like in arrays
+                    </li>
+                </ul>
+            </div>
+            <h3>
+                JavaScript String charAt()
+            </h2>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;charAt()&nbsp;&nbsp;</span> method returns the character the character at a specified index (position) in a string 
+            </p>
+            <p>
+                Example:
+            </p>
+            <div class="code">
+                <pre>
+                            let text = "HELLO, WORLD!";
+                            let char = text .charAt(0);
+                </pre>
+            </div>
+            <h3>
+                The charAt()method
+            </h3>
+            <p>
+                The charAt()method returns the character at a given position in a string:
+            </p>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <script>
+                var text = "HELLO, WORLD!";
+                document.getElementById("demo01").innerHTML = text.charAt(0);
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="01.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="03.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

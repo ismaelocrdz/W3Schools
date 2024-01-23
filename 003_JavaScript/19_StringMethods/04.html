@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 04
+            </h1>
+            <h2>
+                Bracket Notation
+            </h2>
+            <p>
+                The bracket notation [] returns an indexed element from a string:  
+            </p>
+            <p>
+                Example:
+            </p>
+            <div class="code">
+                <pre>
+                const name ="Yazmín";
+                let letter = name[2];
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>            
+            <h3>
+                Example:
+            </h3>
+            <p>
+                Get the third letter of name:
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;at()&nbsp;&nbsp;</span> method returns the character at a spiecified index (position) in a string.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;at()&nbsp;&nbsp;</span> method is supported in all modern browsers sins March 2022.
+            </p>
+            <div class="notice DYK">
+                <h2>
+                    Note
+                </h2>
+                <p>
+                    The <span class="nota">&nbsp;&nbsp;at()&nbsp;&nbsp;</span> method is a new addition to JavaScript.
+                </p>
+                <p>
+                    It allows the use of negative indexes while <span class="nota">&nbsp;&nbsp;charAt()&nbsp;&nbsp;</span> do not.
+                 </p>
+                <p>
+                    Now you can use <span class="nota">&nbsp;&nbsp;myString(2).at(-2)&nbsp;&nbsp;</span> instead of <span class="nota">&nbsp;&nbsp;charAt(myString.length-2)&nbsp;&nbsp;</span> .
+                </p>
+            </div>
+            <script>
+                const name = "Yazmín";
+                let letter = name[2];
+                document.getElementById("demo02").innerHTML = letter;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="03.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="04.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
