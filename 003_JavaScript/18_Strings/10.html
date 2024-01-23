@@ -3,49 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String Length</title>
+    <title>Template Strings</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="content">
             <h1>
-                JavaScript Strings 08
+                JavaScript Strings 10
             </h1>
             <h2>
-                Escape Characters
+                JAvaScript Strings as objects
             </h2>
-            <h3>
-                Example 03
-            </h3>
             <p>
-                \\ inserts a backslash in a string:
-            </p>
-            <p>
-                The escape sequence \\ inserts a backslash in a string.
+                Normally, JavaScript strings are primitive values, created from literals:
             </p>
             <div class="code">
                 <pre>
-        <span class="colors blue">let text</span> = <span class="colors darkRed">"The character \\ is called backslash";</span>
+                    <span class="colors blue">let x</span> = <span class="colors darkRed">"Isma";</span>
+                </pre>
+            </div>
+            <p>
+                But strings can also be defined as objects with the keyword <span class="nota">&nbsp;&nbsp;new&nbsp;&nbsp;</span> :
+            </p>
+            <div class="code">
+                <pre>
+                    <span class="colors blue">let y = new String</span> &#40;"<span class="colors darkRed">Isma</span>&#41;; 
                 </pre>
             </div>            
             <p id="demo01" class="demos demo_01">                
-            </p>  
-            <p>
-                <a href="08.html">View Example 03</a>
-            </p>
-            <script>
-                let text = "The character \\ is called backslash";
-                document.getElementById("demo01").innerHTML = text;
-            </script>
+            </p>            
         </div>
         <div class="menu">
             <button>
-                <a href="07.html">Before</a>
+                <a href="09.html">Before</a>
             </button>            
             |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
             <button>
-                <a href="09.html">Next</a>
+                <a href="10.html">Next</a>
             </button>
         </div>
     </div>    
