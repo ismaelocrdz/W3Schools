@@ -13,7 +13,7 @@
                 JavaScript Strings 10
             </h1>
             <h2>
-                JAvaScript Strings as objects
+                JavaScript Strings as objects
             </h2>
             <p>
                 Normally, JavaScript strings are primitive values, created from literals:
@@ -28,11 +28,26 @@
             </p>
             <div class="code">
                 <pre>
-                    <span class="colors blue">let y = new String</span> &#40;"<span class="colors darkRed">Isma</span>&#41;; 
+            <span class="colors blue">let y = new String</span> &#40;"<span class="colors darkRed">Isma</span>"&#41;; 
                 </pre>
-            </div>            
+            </div>
+            <h3>
+                Example:
+            </h3>            
             <p id="demo01" class="demos demo_01">                
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <p id="demo03" class="demos demo_03">                
             </p>            
+            <script>
+                // x is a string
+                let x = "Isma";
+                // y is an object
+                let y = new String ("Yaz");
+                document.getElementById("demo01").innerHTML = typeof x + "<br>" + typeof y;
+                document.getElementById("demo02").innerHTML =  x + "<br>" + y; 
+            </script>            
         </div>
         <div class="menu">
             <button>
@@ -40,7 +55,7 @@
             </button>            
             |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
             <button>
-                <a href="10.html">Next</a>
+                <a href="11.html">Next</a>
             </button>
         </div>
     </div>    

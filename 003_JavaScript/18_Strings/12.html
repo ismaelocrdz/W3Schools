@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings 12
+            </h1>
+            <h2>
+                JavaScript Strings as objects
+            </h2>
+            <p>
+                When using the <span class="nota">&nbsp;&nbsp;===&nbsp;&nbsp;</span> operator, x and y are <b>not equal</b>:
+            </p>
+            <div class="code">
+                <pre>
+                <span class="colors blue">let x</span> = <span class="colors darkRed">"Isma";</span>
+                </pre>
+            </div>
+            <div class="code">
+                <pre>
+        <span class="colors blue">let y = new String</span>&#40;"<span class="colors darkRed">Isma</span>"&#41;; 
+                </pre>
+            </div>
+            <h2>
+                Never Create Strings as Objects
+            </h2>
+            <p>
+                Strings and objects cannot be safely compared
+            </p>                    
+            <p id="demo01" class="demos demo_01">                
+            </p>                  
+            <script>
+                let x = "Isma";             // x is a string
+                let y = new String("Isma"); // y is an object
+                document.getElementById("demo01").innerHTML =
+                (x === y)
+            </script>           
+        </div>
+        <div class="menu">
+            <button>
+                <a href="11.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="13.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

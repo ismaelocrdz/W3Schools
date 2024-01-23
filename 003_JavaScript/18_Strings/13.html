@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings 13
+            </h1>
+            <h2>
+                JavaScript Strings as objects
+            </h2>
+            <div class="notice DYK">
+                <p>
+                    Note the difference between <span class="nota">&nbsp;&nbsp;(x==y)&nbsp;&nbsp;</span> and <span class="nota">&nbsp;&nbsp;(x===y)&nbsp;&nbsp;</span>.
+                </p>
+            </div>
+            <p>
+                <span class="red">&nbsp;&nbsp;(x==y)&nbsp;&nbsp;</span> true or false?
+            </p>
+            <p>
+                <span class="blue">let x</span> = new String("<span class="darkRed">Isma"</span>);
+            </p>
+            <p>
+                <span class="blue">let y</span> = new String("<span class="darkRed">Isma"</span>);
+            </p>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <div class="notice DYK">
+                <p>
+                    Comparing two JavaScript objects <b>always</b> returns <b>false</b>.
+                </p>
+            </div>
+            <script>
+                let x = new String("Isma"); // x is an object
+                let y = new String("Isma"); // y is an object
+                document.getElementById("demo01").innerHTML = (x==y);
+                document.getElementById("demo02").innerHTML = (x===y);
+            </script>          
+        </div>
+        <div class="menu">
+            <button>
+                <a href="11.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="13.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
