@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 08
+            </h1>
+            <h2>
+                Extracting String Parts
+            </h2>
+            <p>
+                if a parameter is negative, the position is counted from the end of the string:
+            </p>
+            <div class="code">
+                <pre>
+                    let text = "Apple, Banana, Kiwi";
+                    let part = text.slice(-12);
+                </pre>
+            </div>
+            <h3>
+                The slice() Method
+            </h3>
+            <p>
+                Extract a part of a string counting from the end:
+            </p>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p>
+                The next example slices out a portion of a string from position -12 to position -6:
+            </p>
+            <div class="code">
+                <pre>
+                    let text = "Apple, Banana, Kiwi";
+                    let part = text.slice(-12, -6);
+                </pre>
+            </div>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <script>
+                let text = "Apple, Banana, Kiwi";
+                let part = text.slice(-12);
+                document.getElementById("demo01").innerHTML = part;
+                let partI = text.slice(-12,-6);
+                document.getElementById("demo02").innerHTML = partI;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="07.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="09.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

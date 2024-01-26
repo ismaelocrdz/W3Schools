@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings Methods</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 05
+            </h1>
+            <h2>
+                Property Access []
+            </h2>
+            <div class="code">
+                <pre>
+                let text = "Hello, World!";
+                let char = text[0];
+                </pre>
+            </div>
+            <p>
+                Example:
+            </p>
+            <p>
+                The first character in the string is: 
+            </p>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <div class="notice DYK">
+                <h2>
+                    Note
+                </h2>
+                <p>
+                    Property access might be a little <b>unpredictable</b>:
+                </p>
+                <div class="list">
+                    <ul>
+                        <li>
+                            It makes strings look like arrays (but they are not)
+                        </li>
+                        <li>
+                            If no character is found, [] returns undefined, while charAt() returns an empty string.
+                        </li>
+                        <li>
+                            It is read only. str[0] = "A" gives no error (but does not work!).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h3>
+                Example:
+            </h3>
+            <div class="code">
+                <pre>
+        let text = "HELLO WORLD";
+        text[0] = "A";    // Gives no error, but does not work
+                </pre>
+            </div>
+            <p>
+                Property acces on strings are read only:
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <script>
+                let text ="HELLO, WORLD!";
+                document.getElementById("demo01").innerHTML = text[0];
+                text[0] = "A"; //Does not work
+                document.getElementById("demo02").innerHTML = text;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="04.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="06.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

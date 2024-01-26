@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 10
+            </h1>            
+            <h2>
+                JavaScript String substr()
+            </h2>
+            <p>
+               If you omit the second parameter, <span class="nota">&nbsp;&nbsp;substr()&nbsp;&nbsp;</span> will slice out the rest of the string.
+            </p>
+            <div class="code">
+                <pre>
+                    let str = "Apple, Banana, Kiwi";
+                    let part = str.substr(7);
+                </pre>
+            </div>                        
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p>
+                If the first parameter is negative, the position counts from the end of the string:
+            </p>
+            <div class="code">
+                <pre>
+                    let str = "Apple, Banana, Kiwi";
+                    let part = str.substr(-4);
+                </pre>
+            </div>
+            <p id="demo02" class="demos demo_02"></p>
+            <script>
+                let str = "Apple, Banana, Kiwi";
+                document.getElementById("demo01").innerHTML = str.substr(7);
+                document.getElementById("demo02").innerHTML = str.substr(-4);
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="09.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="11.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

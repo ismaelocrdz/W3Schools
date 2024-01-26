@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 13
+            </h1>            
+            <h2>
+                String trim()
+            </h2>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;trim()&nbsp;&nbsp;</span> methods removes whitespaces from both sides of a string.
+            </p>
+            <h3>
+                Example
+            </h3>
+            <div class="code">
+                <pre>
+                    let text01 = "      Hello, World!      ";
+                    let text02 = text01.trim();                    
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <hr>
+            <h2>
+                String trimStart()
+            </h2>
+            <p>
+                ECMAScript 2019 added the String method <span class="nota">&nbsp;&nbsp;trimStart()&nbsp;&nbsp;</span> to JavaScript.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;trimStart()&nbsp;&nbsp;</span> method works like <span class="nota">&nbsp;&nbsp;trim()&nbsp;&nbsp;</span> , but removes whitespaces only from the start of a string.
+            </p>
+            <p id="demo02" class="demos demo_02">                
+            </p>
+            <p>
+                JavaScript String <span class="nota">&nbsp;&nbsp;trimStart()&nbsp;&nbsp;</span> is supported in all modern browsers since JAnuary 2020.
+            </p>
+            <script>
+                let text01 = "      Hello, World!      ";
+                let text02 = text01.trim();
+                document.getElementById("demo01").innerHTML =
+                "Length text01 =" + text01.length + "<br>Length text02 = " + text02.length;
+                let text03 = text01.trimStart();
+                document.getElementById("demo02").innerHTML =
+                "Length text01 =" + text01.length + "<br>Length text03 = " + text03.length;
+            </script>            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="12.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="14.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

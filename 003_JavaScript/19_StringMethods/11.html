@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 11
+            </h1>            
+            <h2>
+                Converting to Upper Case and Lower Case
+            </h2>
+            <p>
+                A string is converted to upper case with <span class="nota">&nbsp;&nbsp;toUpperCase()&nbsp;&nbsp;</span> .
+            </p>
+            <p>
+                A string is converted to lower case with <span class="nota">&nbsp;&nbsp;toLowerCase()&nbsp;&nbsp;</span> .
+            </p>
+            <h2>
+                Convert String to Upper Case
+            </h2>
+            <h3>
+                Example:
+            </h3>
+            <div class="code">
+                <pre>
+        let text01 = "Hello, World!";
+        let text02 = text01.toUpperCase;
+                </pre>
+            </div>
+            <button onclick="myFunction()">
+                Try it!
+            </button>                        
+            <p id="demo01" class="demos demo_01">                
+                Hello, World!
+            </p>
+            <hr>
+            <h2>
+                Convert String to lower case
+            </h2>
+            <div class="code">
+                <pre>
+        let text01 = "Hello, World!";
+        let text02 = text01.toUpperCase;
+                </pre>
+            </div>
+            <button onclick="myFunctionLC()">
+                Try it!
+            </button>
+            <p id="demo02" class="demos demo_02">
+                HELLO, WORLD!
+            </p>            
+            <script>
+                function myFunction(){
+                    let text =
+                    document.getElementById("demo01").innerHTML;
+                    document.getElementById("demo01").innerHTML =
+                    text.toUpperCase();
+                }
+                function myFunctionLC(){
+                    let text02 =
+                    document.getElementById("demo02").innerHTML;
+                    document.getElementById("demo02").innerHTML =
+                    text02.toLowerCase();
+                }
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="10.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="12.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

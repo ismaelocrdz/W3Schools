@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 12
+            </h1>            
+            <h2>
+                String concat()
+            </h2>
+            <p>
+                <span class="nota">&nbsp;&nbsp;concat()&nbsp;&nbsp;</span> joins two or more strings.
+            </p>
+            <h3>
+                Example
+            </h3>
+            <div class="code">
+                <pre>
+                    let text01 = "Hello";
+                    let text02 = "World";
+                    let text03 = text01.concat(" ", text02,!);
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <hr>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;concat()&nbsp;&nbsp;</span> method can be used instead of the plus operator. These two lines do the same
+            </p>
+            <div class="code">
+                <pre>
+                    text = "Hello," + " " + "World!";
+                    text = "Hello".concat(", ","World","!");
+                </pre>
+            </div>
+            <div class="notice DYK">
+                <h2>
+                    Note
+                </h2>
+                <p>
+                    All string methods return a new string. They don't modify the original string.
+                </p>
+                <p>
+                    Formally said:
+                </p>
+                <p>
+                    Strings are immutable. Strings cannot be changed, only replaced. 
+                </p>
+            </div>
+            <script>
+                let text01 = "Hello";
+                let text02 = "World";
+                let text03 = text01.concat(", ",text02,"!");
+                document.getElementById("demo01").innerHTML =
+                text03
+            </script>
+            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="11.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="13.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 15
+            </h1>            
+            <h2>
+                The padStart() Method
+            </h2>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;padStart&nbsp;&nbsp;</span>Method pads a string from the start.
+            </p>
+            <p>
+                It pads the string with another string (multiple times) until it reaches a given legth.
+            </p>            
+            <h3>
+                Example
+            </h3>
+            <p>
+                Pad a string with "0" until it reaches the legth 4:
+            </p>
+            <div class="code">
+                <pre>
+                    let text01 = "5";
+                    let padded = text01.padStart(4,"0");                    
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <hr>
+            <p>
+                Pad a string with "x" until it reaches the legth 5:
+            </p>
+            <div class="code">
+                <pre>
+                    let text01 = "7";
+                    let padded = text01.padStart(7,"x");                    
+                </pre>
+            </div>
+            <p id="demo02" class="demos demo_02">                
+            </p>            
+            <script>
+                let text01 = "5";
+                text01 = text01.padStart(4,"0");
+                document.getElementById("demo01").innerHTML = text01;
+                text02 = "7";
+                text02 = text02.padStart(7,"x");
+                document.getElementById("demo02").innerHTML = text02;
+            </script>            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="14.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="16.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

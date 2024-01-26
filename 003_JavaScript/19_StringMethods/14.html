@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 14
+            </h1>            
+            <h2>
+                String trimEnd()
+            </h2>
+            <p>
+                ECMAScript 2019 added the String method <span class="nota">&nbsp;&nbsp;trimEnd()&nbsp;&nbsp;</span> to JavaScript.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;trimEnd()&nbsp;&nbsp;</span> method works like <span class="nota">&nbsp;&nbsp;trim()&nbsp;&nbsp;</span> , but removes whitespaces only from the end of a string.
+            </p>            
+            <h3>
+                Example
+            </h3>
+            <div class="code">
+                <pre>
+                    let text01 = "      Hello, World!      ";
+                    let text02 = text01.trim();                    
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>            
+            <script>
+                let text01 = "      Hello, World!      ";
+                let text02 = text01.trimEnd();
+                document.getElementById("demo01").innerHTML =
+                "Length text01 =" + text01.length + "<br>Length text02 = " + text02.length;                
+            </script>            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="13.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="15.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
