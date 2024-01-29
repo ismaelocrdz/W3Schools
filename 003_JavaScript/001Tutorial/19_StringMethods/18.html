@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracting String Parts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript Strings Methods 18
+            </h1>            
+            <h2>
+                The repeat() Method
+            </h2>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;repeat()&nbsp;&nbsp;</span> returns a string with a number of copies of a sring.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;repeat()&nbsp;&nbsp;</span> returns a new string.
+            </p>
+            <p>
+                The <span class="nota">&nbsp;&nbsp;repeat()&nbsp;&nbsp;</span> does not change the original string.
+            </p>
+                        
+            <h3>
+                Examples
+            </h3>            
+            <div class="code">
+                <pre>
+                                                            let text = "Hello, World! ";
+                                                            let result = text.repeat(2);                    
+                </pre>
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p> 
+                repeat() is not supported in Internet Explorer
+            </p>
+            <hr>            
+            <div class="code">
+                <pre>
+                                                        let text01 = "¡Yaz, mi niña bonita! ";
+                                                        let padded = text01.padEnd(7,"x");                    
+                </pre>
+            </div>
+            <p id="demo02" class="demos demo_02">                
+            </p>            
+            <script>
+                let text01 = "Hello, world! ";
+                let result01 = text01.repeat(4);
+                document.getElementById("demo01").innerHTML = result01;
+                let text02 = "¡Yaz, mi niña bonita! ";
+                let result02 = text02.repeat(6);
+                document.getElementById("demo02").innerHTML = result02;
+            </script>            
+        </div>
+        <div class="menu">
+            <button>
+                <a href="17.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="19.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
