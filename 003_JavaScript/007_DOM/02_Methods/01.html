@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Methods 01
+            </h1>
+            <p>
+                HTML DOM methods are <b>actions</b>you can perform (on HTML Elements).
+            </p>
+            <p>
+                HTML DOM properties are <b>values</b> (of HTML Elements) that you can ser or change.
+            </p>
+            <h2>
+                The DOM Programming Interface
+            </h2>
+            <p>
+                The HTML DOM can be accesed with JavaScript (and with other programming languages).
+            </p>
+            <p>
+                In the DOM, all HTML elements are defined as <b>objects</b>
+            </p>
+            <p>
+                The programming interface is the properties and methods of each object.
+            </p>
+            <p>
+                A <b>property</b> is a value that you can get or set (like changing the content of an HTML element).
+            </p>
+            <p>
+                A <b>method</b> is an action you can do (like add or deleting an HTML element).
+            </p>
+            <h2>
+                Example
+            </h2>
+            <p>
+                The following example changes the content (the <span class="nota">&nbsp;&nbsp; innerHTML &nbsp;&nbsp;</span> ) of the <span class="nota">&nbsp;&nbsp;&lt;p&gt;&nbsp;&nbsp;</span> element with <span class="nota">&nbsp;&nbsp;id="demo"&nbsp;&nbsp;</span> .
+            </p>
+            <div class="code">
+                <pre>
+            &lt;html&gt;
+            &lt;body&gt;
+                &lt;p id="demo"&gt;&lt;/p&gt;
+                &lt;script&gt;
+                    document.getElementById("demo").innerHTML = "Hello World!";
+                &lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+                </pre>                
+            </div>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <hr>
+            <p>
+                In the example above, <span class="nota">&nbsp;&nbsp; getElementById &nbsp;&nbsp;</span> is a <b>method</b>, while <span class="nota">&nbsp;&nbsp; innerHTML &nbsp;&nbsp;</span> is a <b>property</b>.
+            </p>
+            <script>
+                document.getElementById("demo01").innerHTML = "Hello, World!";
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="02.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="02.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
