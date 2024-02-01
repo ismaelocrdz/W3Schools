@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Elements 01
+            </h1>
+            <p>
+                This page teaches you how to find and access HTML elements in an HTML page.
+            </p>
+            <h2>
+                Finding HTML Elements
+            </h2>
+            <p>
+                Often, with JavaScript, you want to manipulate HTML elements.
+            </p>
+            <p>
+                To do so, you have to find the elements first. There are several ways to do this:
+            </p>
+            <div class="list">
+                <ul>
+                    <li>
+                        Finding HTML elements by id
+                    </li>
+                    <li>
+                        Finding HTML elements by tag name
+                    </li>
+                    <li>
+                        Finding HTML elements by class name
+                    </li>
+                    <li>
+                        Finding HTML elements by CSS selectors
+                    </li>
+                    <li>
+                        Finding HTML elements by HTML object collections
+                    </li>
+                </ul>
+            </div>
+            <h2>
+                Finding HTML Element by Id
+            </h2>
+            <p>
+                The easiest way to fiund an HTML element in the DOM, is by using the elelment id.
+            </p>
+            <p>
+                This example finds the element with <span class="nota">&nbsp;&nbsp; id="intro" &nbsp;&nbsp;</span> :
+            </p>
+            <div class="code">
+                <pre>
+            const element = document.getElementById("intro");
+            document.getElementById("demo01").innerHTML =
+            "<b>The text from the intro program is: </b>" + element.innerHTML;
+                </pre>                
+            </div>
+            <p id="intro">
+                Finding HTML Elements by id
+            </p>
+            <p>
+                This example demonstrates the <b>getElementById</b> method.
+            </p>
+            <p id="demo01" class="demos demo_01">                
+            </p>
+            <p>
+                If the element is found, the method will return the element as an object (in element).
+            </p>
+            <p>
+                If the element is not found, element will contain <span class="nota">&nbsp;&nbsp; null &nbsp;&nbsp;</span> .
+            </p>
+            <script>
+                const element = document.getElementById("intro");
+                document.getElementById("demo01").innerHTML = "The text from the intro program is: " + element.innerHTML;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="02.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="02.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

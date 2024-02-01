@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Elements</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Elements 02
+            </h1>
+            <h2>
+                Finding HTML Elements by Tag Name
+            </h2>
+            <!-- index 0 -->            
+            <p>
+                This example finds all <span class="nota">&nbsp;&nbsp;&lt;p&gt;&nbsp;&nbsp;</span> elements:
+            </p>            
+            <div class="code">
+                <pre>
+                        const element = document.getElementsByTagName("p");            
+                </pre>                
+            </div>
+            <!-- index 1 -->
+            <p>
+                Finding HTML elements by Tag Name.
+            </p>
+            <!-- index 2 -->
+            <p>
+                This example demonstrates the <b>getElementByTagName</b> method.
+            </p>
+            <!-- index 3 -->
+            <p id="demo01" class="demos demo_01">                 
+            </p>
+            <hr>
+            <!-- index 4 -->
+            <p> 
+                This example finds the element with <span class="nota">&nbsp;&nbsp;id="main"&nbsp;&nbsp;</span> and then finds all <span class="nota">&nbsp;&nbsp;&lt;p&gt;&nbsp;&nbsp;</span> elements inside <span class="nota">&nbsp;&nbsp;"main"&nbsp;&nbsp;</span> :
+            </p>
+            <div class="code">
+                <pre>
+                            const x = document.getElementById("main");
+                            const y = x.getElementsByTagName("p");
+                </pre>
+            </div>
+            <div id="main">
+                <!-- index 0 -->
+                <p>
+                    Finding HTML Elements by Tag Name
+                </p>
+                <!-- index 1 -->
+                <p>
+                    This example demonstrates the <b>getElemenstsByTagName</b> method.
+                </p>
+            </div>
+            <!-- index 5 -->
+            <p id="demo02" class="demos demo_02">                 
+            </p>
+            <script>
+                const element = document.getElementsByTagName("p");
+                document.getElementById("demo01").innerHTML =
+                'The text in last paragraph (index 1) is: ' + element[1].innerHTML;
+                const x = document.getElementById("main");
+                const y = x.getElementsByTagName("p");
+                document.getElementById("demo02").innerHTML =
+                'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="01.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="03.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
