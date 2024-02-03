@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Elements | Class Name</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Elements 05
+            </h1>
+            <h2>
+                Finding HTML Elements by HTML Object Collections
+            </h2>
+            <!-- index 0 --> 
+            <p>
+                This example finds the form element with <span class="nota">&nbsp;&nbsp;id="frml"&nbsp;&nbsp;</span> in the forms collection, and displays all element values. 
+            </p>        
+            <div class="code">
+                <pre>
+                    const x = document.forms("frml");
+                    let text = "";
+                    for (let i = 0; i &lt; x.length:i++){
+                        text += x.elements[i].value + "&lt;br&gt;";
+                    }
+                    document.getElementById("demo01").innerHTML = text;            
+                </pre>                
+            </div>            
+            <!-- index 1 -->
+            <p>
+                Finding HTML Elements using <b>document.forms</b>
+            </p>
+            <form id="frml" action="/action_page.php">
+                First name: <input type="text" name="fname" value="Pato"><br>
+                last name: <input type="text" name="lname" value="Donald"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <!-- index 2 -->
+            <p>
+                These are the values of each element in the form:
+            </p>
+            <!-- index 3 -->
+            <p id="demo01">                
+            </p>
+            <script>
+                const x = document.forms["frml"];
+                let text = "";
+                for (let i = 0; i < x.length; i++){
+                    text += x.elements[i].value + "<b>"; 
+                }
+                document.getElementById("demo02").innerHTML = text;
+            </script>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="03.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="05.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
