@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM | Changing HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Changing HTML 03
+            </h1>
+            <h2>
+                Changing the Value of an Attribute
+            </h2>
+            <!-- Index 0-->
+            <p>
+                To change the value of an HTML attribute, use this syntax:
+            </p>          
+            <div class="code">
+                <pre>
+            document.getElementById(id).attribute = new value 
+                </pre>
+            </div>
+            <!-- Index 1-->
+            <p>
+                This example changes the value of the src attribute of an <span class="nota">&nbsp;&nbsp; &lt;img&gt; &nbsp;&nbsp;</span> element:
+            </p>
+            <div class="code">
+                <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;body&gt;
+                &lt;img id="myImage" src="smiley.gif"&gt;
+                &lt;script&gt;
+                    document.getElementById("myImage").src = "landscape.jpg";
+                &lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+                </pre>
+            </div>
+            <img id="image" src="./img/smiley.gif" width="160" height="120">
+            <script>
+                document.getElementById("image").src = "./img/landscape.jpg";
+            </script>
+            <!-- Index 2-->
+            <p>
+                The original image was smiley.gif, but the script changed it  to landscape.jpg
+            </p>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="02.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="C:/Users/Isma/Documents/001_Universidades/015_W3Schools/003_JavaScript/007_DOM/04_HTML/">Raíz</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="04.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

@@ -3,48 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript DOM | Changing HTML</title>
+    <title>JavaScript DOM | Forms</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="content">
             <h1>
-                JavaScript HTML DOM Changing HTML 01
+                JavaScript Forms 01
             </h1>
+            <h2>
+                JavaScript Form Validation
+            </h2>
             <p>
-                The HTML DOM allows JavaScript to change the content of HTML elements.
+                HTML form validation can be done by JavaScript
+            </p>            
+            <p>
+                If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submited.
             </p>
             <h2>
-                Changing HTML Content
+                JavaScriot Example
             </h2>
-            <!-- Index 0-->
-            <p>
-                The easiest way to modify the content of an HTML elements is by using the <span class="nota">&nbsp;&nbsp; innerHTML &nbsp;&nbsp;</span> 
-            </p>
-            <!-- Index 1-->
-            <p>
-                To change the content of an HTML element, use this syntax:
-            </p>
             <div class="code">
                 <pre>
-            document.getElementById(id).innerHMTL = new HTML
+                    function validateForm() {
+                        let x = document.forms["myForm"]["fname"].value;
+                        if (x == "") {
+                          alert("Name must be filled out");
+                          return false;
+                        }
+                      }
                 </pre>
             </div>
-            <!-- Index 2-->
             <p>
-                This example changes the content of a <span class="nota">&nbsp;&nbsp; &lt;p&gt; &nbsp;&nbsp;</span> elemnt:
+                The function can be called when the form is submitted:
             </p>
             <div class="code">
                 <pre>
-        &lt;html&gt;
-        &lt;body&gt;
-            &lt;p id="demo01"&gt;Hello World!&lt;/p&gt;
-            &lt;script&gt;
-                document.getElementById("demo01").innerHTML = "New text!";
-            &lt;/script&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+    &lt;form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"&gt;
+    Name: &lt;input type="text" name="fname"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
                 </pre>
             </div>
             <!-- Index 3-->

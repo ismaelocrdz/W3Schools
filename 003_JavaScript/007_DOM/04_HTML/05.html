@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM | Changing HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Changing HTML 04
+            </h1>
+            <h2>
+                document.write()
+            </h2>            
+            <p>
+                In JavaScript, <span class="nota">&nbsp;&nbsp; document.write() &nbsp;&nbsp;</span> can be used to write directly to the HTML output stream:
+            </p>            
+            <h2>
+                Example
+            </h2>      
+            <div class="code">
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;p&gt;Bla bla bla&lt;/p&gt;
+                            &lt;script&gt;
+                                document.write(Date());
+                            &lt;/script&gt;
+                        &lt;p&gt;Bla bla bla&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+ 
+                </pre>
+            </div>
+            <p>
+                Bla, bla, bla
+            </p>
+            <script>
+                document.write(Date());
+            </script>
+            <p>
+                Bla, bla, bla
+            </p>
+            <div class="notice DYK">
+                Never use <span class="nota">&nbsp;&nbsp; document.write() &nbsp;&nbsp;</span> after the document is loaded. It will overwrite the document.
+            </div>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="04.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="C:/Users/Isma/Documents/001_Universidades/015_W3Schools/003_JavaScript/007_DOM/04_HTML/">Raíz</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="05.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>

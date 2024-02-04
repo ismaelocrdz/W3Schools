@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM | Changing HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                JavaScript HTML DOM Changing HTML 02
+            </h1>
+            <!-- Index 0-->
+            <p>
+                Example explained:
+            </p>
+            <div class="list">
+                <ul>
+                    <li>
+                        The previous HTML document contains a <span class="nota">&nbsp;&nbsp; &lt;p&gt; &nbsp;&nbsp;</span> elemnt with <span class="nota">&nbsp;&nbsp; &id="demo01" &nbsp;&nbsp;</span>
+                    </li>
+                    <li>
+                        We use the HTML DOM to get the element with <span class="nota">&nbsp;&nbsp; id="demo01" &nbsp;&nbsp;</span> 
+                    </li>
+                    <li>
+                        A JavaScript changes the content ( <span class="nota">&nbsp;&nbsp; innerHTML &nbsp;&nbsp;</span> ) of that element to "New Text!"
+                    </li>
+                </ul>
+            </div>
+            <!-- Index 1-->
+            <p>
+                The next example changes the content of an <span class="nota">&nbsp;&nbsp; &lt;h1&gt; &nbsp;&nbsp;</span>
+            </p>            
+            <div class="code">
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;                    
+                        &lt;h1 id="id01"&gt;Old Heading&lt;/h1&gt;                    
+                        &lt;script&gt;
+                            const element = document.getElementById("id01");
+                            element.innerHTML = "New Heading";
+                        &lt;/script&gt;                    
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </div>
+            <h1 id="id01">
+                Old Heading
+            </h1>
+            <script>
+                const element = document.getElementById("id01");
+            element.innerHTML = "New Heading!"
+            </script>
+            <!-- Index 2-->
+            <p>
+                JavaScript changed "Old Heading" to "New Heading!"
+            </p>
+        </div>
+        <div class="menu">
+            <button>
+                <a href="01.html">Before</a>
+            </button>            
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="C:/Users/Isma/Documents/001_Universidades/015_W3Schools/003_JavaScript/007_DOM/04_HTML/">Raíz</a>
+            </button>
+            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            <button>
+                <a href="03.html">Next</a>
+            </button>
+        </div>
+    </div>    
+</body>
+</html>
